@@ -15,8 +15,8 @@
         <div class="container">
             <h2>Activity Generator</h2>
             <p>Customize your activity</p>
-            <label for="type">Type:</label>
             <form action="/generate" method="post">
+                <label for="type">Type:</label>
                 <select name="type" id="type">
                     <option value="">All</option>
                     <option value="education">Education</option>
@@ -30,6 +30,9 @@
                     <option value="busywork">Busywork</option>
                 </select>
 
+                <br>
+
+                <label for="accessibility">Accessibility:</label>
                 <select name="accessibility" id="accessibility">
                     <option value="">All</option>
                     <option value="0">Fully Accessible</option>
@@ -39,10 +42,22 @@
                     <option value="4">Almost Not Accessible</option>
                 </select>
 
+                <br>
 
-
+                <label for="people"># of People:</label>
+                <input type="number" name="people" id="people" min="1" max="10">
 
                 <br>
+
+                <label for="budget">Budget:</label>
+                <br>
+                <label for="min_budget">Min Budget:</label>
+                <input type="text" name="min_budget" id="min_budget" placeholder="Enter min budget" min="0" max="100">
+                <label for="max_budget">Max Budget:</label>
+                <input type="text" name="max_budget" id="max_budget" placeholder="Enter max budget" min="0" max="100">
+
+                <br>
+            
                 <button type="submit" class="btn btn-primary">Generate</button>
             </form>
         </div>
