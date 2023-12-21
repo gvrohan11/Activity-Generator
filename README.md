@@ -1,4 +1,4 @@
-# Activity-Generator
+# Activity Generator Web App
 
 Flask web app that generates an activity using the Bored API. 
 
