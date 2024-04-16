@@ -121,8 +121,8 @@ def generate_post():
                 print(max_budget)
 
         except:
-            print("not a valid budget")
-            status = "Not a valid budget"
+            print("Inalid budget")
+            status = "Invalid budget"
             return redirect('/bad_results')
 
     # min_budget = request.form.get("min_budget")

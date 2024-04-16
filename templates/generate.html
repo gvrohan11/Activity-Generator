@@ -15,49 +15,50 @@
         <div class="container">
             <h2>Activity Generator</h2>
             <p>Customize your activity</p>
-            <form action="/generate" method="post">
-                <label for="type">Type:</label>
-                <select name="type" id="type">
-                    <option value="">All</option>
-                    <option value="education">Education</option>
-                    <option value="recreational">Recreational</option>
-                    <option value="social">Social</option>
-                    <option value="diy">DIY</option>
-                    <option value="charity">Charity</option>
-                    <option value="cooking">Cooking</option>
-                    <option value="relaxation">Relaxation</option>
-                    <option value="music">Music</option>
-                    <option value="busywork">Busywork</option>
-                </select>
-
-                <br>
-
-                <label for="accessibility">Accessibility:</label>
-                <select name="accessibility" id="accessibility">
-                    <option value="">All</option>
-                    <option value="0">Fully Accessible</option>
-                    <option value="1">Very Accessible</option>
-                    <option value="2">Moderately Accessible</option>
-                    <option value="3">Slightly Accessible</option>
-                    <option value="4">Almost Not Accessible</option>
-                </select>
-
-                <br>
-
-                <label for="people"># of People:</label>
-                <input type="number" name="people" id="people" min="1" max="10">
-
-                <br>
-
-                <label for="budget">Budget:</label>
-                <br>
-                <label for="min_budget">Min Budget:</label>
-                <input type="text" name="min_budget" id="min_budget" placeholder="Enter min budget" min="0" max="100">
-                <label for="max_budget">Max Budget:</label>
-                <input type="text" name="max_budget" id="max_budget" placeholder="Enter max budget" min="0" max="100">
-
-                <br>
             
+            <label for="type">Type:</label>
+            <select name="type" id="type">
+                <option value="">All</option>
+                <option value="education">Education</option>
+                <option value="recreational">Recreational</option>
+                <option value="social">Social</option>
+                <option value="diy">DIY</option>
+                <option value="charity">Charity</option>
+                <option value="cooking">Cooking</option>
+                <option value="relaxation">Relaxation</option>
+                <option value="music">Music</option>
+                <option value="busywork">Busywork</option>
+            </select>
+
+            <br>
+
+            <label for="accessibility">Accessibility:</label>
+            <select name="accessibility" id="accessibility">
+                <option value="">All</option>
+                <option value="0">Fully Accessible</option>
+                <option value="1">Very Accessible</option>
+                <option value="2">Moderately Accessible</option>
+                <option value="3">Slightly Accessible</option>
+                <option value="4">Almost Not Accessible</option>
+            </select>
+
+            <br>
+
+            <label for="people"># of People:</label>
+            <input type="number" name="people" id="people" min="1" max="10">
+
+            <br>
+
+            <label for="budget">Budget:</label>
+            <br>
+            <label for="min_budget">Min Budget:</label>
+            <input type="text" name="min_budget" id="min_budget" placeholder="Enter min budget" min="0" max="100">
+            <label for="max_budget">Max Budget:</label>
+            <input type="text" name="max_budget" id="max_budget" placeholder="Enter max budget" min="0" max="100">
+
+            <br>
+            
+            <form action="/generate" method="post">
                 <button type="submit" class="btn btn-primary">Generate</button>
             </form>
         </div>
